@@ -1,0 +1,53 @@
+{
+  "family": "quarkus-mngr-template",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512",
+  "networkMode": "awsvpc",
+  "taskRoleArn": "arn:aws:iam::000000000000:role/quarkus-mngr-template-ecs-role",
+  "executionRoleArn": "arn:aws:iam::000000000000:role/quarkus-mngr-template-ecs-role",
+  "containerDefinitions": [
+    {
+      "portMappings": [
+        {
+          "hostPort": 0,
+          "protocol": "tcp",
+          "containerPort": 9000
+        }
+      ],
+      "cpu": 256,
+      "environment": [
+        {
+          "name": "QUARKUS_PROFILE",
+          "value": "prod"
+        },
+        {
+          "name": "QUARKUS_LOG_LEVEL",
+          "value": "DEBUG"
+        },
+        {
+          "name": "QUARKUS_GRPC_PORT",
+          "value": "8090"
+        }
+      ],
+      "essential": true,
+      "image": "${image_url}",
+      "memory": 512,
+      "memoryReservation": 256,
+      "name": "quarkus-mngr-template",
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-region": "us-east-1",
+          "awslogs-group": "/aws/ecs/quarkus-mngr-template",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "secrets": [
+
+      ]
+    }
+  ]
+}
