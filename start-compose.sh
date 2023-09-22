@@ -1,0 +1,1 @@
+docker-compose - ./docker_server_rest/docker-compose. yml start
