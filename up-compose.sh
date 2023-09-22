@@ -1,1 +1,1 @@
-docker-compose - ./docker_server_rest/docker-compose. yml up
+docker-compose -f ./docker/docker-compose.yml up
