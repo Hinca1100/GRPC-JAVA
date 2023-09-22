@@ -13,8 +13,8 @@
     <servers>
         <server>
             <id>central</id>
-            <username>{rgonz17@bancodebogota.com.co}</username>
-            <password>{cmVmdGtuOjAxOjE3MjY4ODU0MDQ6UGhNU3Rzc0VrdnBDaTZXU3BsVTJaaWRmb09o}</password>
+            <username>rgonz17@bancodebogota.com.co</username>
+            <password>cmVmdGtuOjAxOjE3MjY4ODU0MDQ6UGhNU3Rzc0VrdnBDaTZXU3BsVTJaaWRmb09o</password>
         </server>
     </servers>
 </settings>
