@@ -190,24 +190,4 @@
             </properties>
         </profile>
     </profiles>
-    <repositories>
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>bintray</name>
-            <url>https://bbogdigital.jfrog.io/bbogdigital/maven-public/</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>bintray-plugins</name>
-            <url>https://bbogdigital.jfrog.io/bbogdigital/maven-public/</url>
-        </pluginRepository>
-    </pluginRepositories>
 </project>
