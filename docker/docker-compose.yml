@@ -5,7 +5,7 @@ services:
     volumes:
       - ../:/files
     ports:
-      - "5005:5005"
+      - "8900:8900"
       - "3300:3300"
     command: >
       sh -c "cd /files &&
