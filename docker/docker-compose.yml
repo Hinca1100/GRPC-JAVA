@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   rest_server:
-    image: amazoncorretto:11.0.20-alpine3.16
+    image: maven:3.9.4-amazoncorretto-11-al2023
     volumes:
       - ../:/files
     ports:
@@ -9,5 +9,5 @@ services:
       - "3300:3300"
     command: >
       sh -c "cd /files &&
-      ./mvnw -DskipTests=true package &&
+      mvn -DskipTests=true package &&
       java -jar ./target/quarkus-app/quarkus-run.jar"
